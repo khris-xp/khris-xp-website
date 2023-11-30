@@ -1,19 +1,33 @@
-<div class='card w-96 bg-base-100 shadow-xl'>
-  <figure>
-    <img
-      src='https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg'
-      alt='Shoes'
-    />
-  </figure>
-  <div class='card-body'>
-    <h2 class='card-title'>
-      Shoes!
-      <div class='badge badge-secondary'>NEW</div>
-    </h2>
-    <p>If a dog chews shoes whose shoes does he choose?</p>
-    <div class='card-actions justify-end'>
-      <div class='badge badge-outline'>Fashion</div>
-      <div class='badge badge-outline'>Products</div>
+---
+const { name, description, link, image, technologies, position } = Astro.props;
+---
+
+<a href={link}>
+  <div class='card w-96 bg-base-100 shadow-xl h-full flex-1'>
+    <div class='h-80 relative rounded-lg'>
+      <div class='block h-full relative'>
+        <img
+          src={image}
+          alt='projects'
+          class='h-full absolute object-cover object-top rounded-t-xl'
+        />
+      </div>
+    </div>
+    <div class='card-body'>
+      <h2 class='card-title'>
+        {name}
+      </h2>
+      <div class='space-x-1'>
+        <div class='badge bg-blue-600 text-gray-100'>{position}</div>
+      </div>
+      <p>{description}</p>
+      <div class='card-actions mt-4'>
+        {
+          technologies.map((tech: string) => (
+            <div class='badge badge-outline'>{tech}</div>
+          ))
+        }
+      </div>
     </div>
   </div>
-</div>
+</a>

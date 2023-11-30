@@ -2,19 +2,39 @@
 import Hero from '../components/Hero.astro';
 import Card from '../components/Card.astro';
 import Layout from '../layouts/Layout.astro';
+import projects from '../content/projects.json';
+import type { TProject } from '../types/project';
+
+const projectsData = projects.projects as unknown as TProject[];
 ---
 
 <Layout title='Home'>
-  <Hero />
-  <div class='flex justify-center text-4xl pt-20 pb-10 font-medium'>
-    Projects
-  </div>
-  <div class='flex justify-center mx-auto container'>
-    <div class='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10'>
-      <Card />
-      <Card />
-      <Card />
-      <Card />
+  <div class='font-jamjuri'>
+    <Hero />
+    <div class='flex justify-center text-4xl pt-20 pb-10 font-medium'>
+      Projects
+    </div>
+    <div class='flex justify-center mx-auto container'>
+      <div class='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10'>
+        {
+          projectsData.map((project) => (
+            <Card
+              key={project.name}
+              name={project.name}
+              description={project.description}
+              link={project.links}
+              image={project.image}
+              technologies={project.technologies}
+              position={project.position}
+            />
+          ))
+        }
+      </div>
+    </div>
+    <div
+      class='flex justify-center text-2xl font-semibold text-blue-500 hover:text-blue-800 duration-200 hover:underline my-20'
+    >
+      <a href='/project'>Explore more project</a>
     </div>
   </div>
 </Layout>

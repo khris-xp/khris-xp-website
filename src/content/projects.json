@@ -1,0 +1,77 @@
+{
+    "projects": [
+        {
+            "name": "Dishdeck API",
+            "description": "Platform for sharing detailed food recipes, perfect for food enthusiasts and bloggers to explore and contribute to a rich culinary knowledge base.",
+            "image": "/content/go-fiber.webp",
+            "links": "https://github.com/khris-xp/dishdeck-api",
+            "technologies": [
+                "Go Fiber",
+                "MongoDB"
+            ],
+            "position": "Backend Developer"
+        },
+        {
+            "name": "open.source.in.th",
+            "description": "Platform for sharing detailed food recipes, perfect for food enthusiasts and bloggers to explore and contribute to a rich culinary knowledge base.",
+            "image": "/content/open-source-in-th.png",
+            "links": "https://open.source.in.th",
+            "technologies": [
+                "Astro",
+                "TailwindCSS"
+            ],
+            "position": "Frontend Developer"
+        },
+        {
+            "name": "X-Clone",
+            "description": "HCRL Twitter Clone: A platform for HCRL researchers to share and collaborate on research findings.",
+            "image": "/content/x-clone.png",
+            "links": "https://x-clone-xi.vercel.app",
+            "technologies": [
+                "Typescript",
+                "Nextjs",
+                "Nodejs",
+                "TailwindCSS",
+                "MongoDB"
+            ],
+            "position": "Fullstack Developer"
+        },
+        {
+            "name": "SAIG Techmastery",
+            "description": "SAIG Web Application for registered training session and submit project.",
+            "image": "/content/saig-techmastery.png",
+            "links": "https://techmastery.ce-saig.com/",
+            "technologies": [
+                "SvelteKit",
+                "TailwindCSS"
+            ],
+            "position": "Frontend Developer"
+        },
+        {
+            "name": "CE Boostup XI Grader",
+            "description": "This is a grader website for CE BoostUp XI.",
+            "image": "/content/ce-boostupxi.png",
+            "links": "https://github.com/khris-xp/boostupxi-web",
+            "technologies": [
+                "SvelteKit",
+                "TailwindCSS",
+                "Nextjs"
+            ],
+            "position": "Frontend Developer"
+        },
+        {
+            "name": "Youtube Clone",
+            "description": "This project is a YouTube clone built with React, TypeScript, Tailwind CSS, and Material UI, using the YouTube v3 API from Rapid API. It includes features like searching for and watching videos.",
+            "image": "/content/youtube-clone.png",
+            "links": "https://incomparable-liger-2b5f83.netlify.app/",
+            "technologies": [
+                "React",
+                "Typescript",
+                "TailwindCSS",
+                "Material UI",
+                "Youtube API"
+            ],
+            "position": "Frontend Developer"
+        }
+    ]
+}
