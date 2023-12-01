@@ -1,9 +1,11 @@
 ---
-import Hero from '../components/Hero.astro';
-import Card from '../components/Card.astro';
-import Layout from '../layouts/Layout.astro';
-import projects from '../content/projects.json';
-import type { TProject } from '../types/project';
+import Hero from '@components/Hero.astro';
+import Card from '@components/Card.astro';
+import Layout from '@layouts/Layout.astro';
+import projects from '@content/projects.json';
+import type { TProject } from 'types/project';
+import TimeLine from '@components/TimeLine.astro';
+import About from '@components/About.astro';
 
 const projectsData = projects.projects as unknown as TProject[];
 ---
@@ -12,8 +14,16 @@ const projectsData = projects.projects as unknown as TProject[];
   <div class='font-jamjuri'>
     <Hero />
     <div class='flex justify-center text-4xl pt-20 pb-10 font-medium'>
-      Projects
+      About me
     </div>
+    <About />
+    <div class='flex justify-center text-4xl pt-20 pb-10 font-medium mt-16'>
+      Experience
+    </div>
+    <div class='flex justify-center mx-auto container mb-16'>
+      <TimeLine />
+    </div>
+    <div class='flex justify-center text-4xl py-20 font-medium'>Projects</div>
     <div class='flex justify-center mx-auto container'>
       <div class='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10'>
         {

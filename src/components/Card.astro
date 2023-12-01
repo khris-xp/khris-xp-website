@@ -3,7 +3,9 @@ const { name, description, link, image, technologies, position } = Astro.props;
 ---
 
 <a href={link}>
-  <div class='card w-96 bg-base-100 shadow-xl h-full flex-1'>
+  <div
+    class='card w-96 bg-base-100 shadow-xl h-full flex-1 ransition-all hover:scale-105 duration-200 ease-in-out'
+  >
     <div class='h-80 relative rounded-lg'>
       <div class='block h-full relative'>
         <img
@@ -18,7 +20,7 @@ const { name, description, link, image, technologies, position } = Astro.props;
         {name}
       </h2>
       <div class='space-x-1'>
-        <div class='badge bg-blue-600 text-gray-100'>{position}</div>
+        <div class='badge bg-primary text-white'>{position}</div>
       </div>
       <p>{description}</p>
       <div class='card-actions mt-4'>
