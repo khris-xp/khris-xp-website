@@ -1,5 +1,13 @@
 ---
 const { name, description, link, image, technologies, position } = Astro.props;
+
+const backgroundColor =
+  position === 'Frontend Developer'
+    ? 'bg-primary'
+    : position === 'Backend Developer'
+    ? 'bg-green-600'
+    : 'bg-orange-600';
+
 ---
 
 <a href={link}>
@@ -20,10 +28,10 @@ const { name, description, link, image, technologies, position } = Astro.props;
         {name}
       </h2>
       <div class='space-x-1'>
-        <div class='badge bg-primary text-white'>{position}</div>
+        <div class={`badge ${backgroundColor} text-white`}>{position}</div>
       </div>
       <p>{description}</p>
-      <div class='card-actions mt-4'>
+      <div class='card-actions mt-4 text-primary'>
         {
           technologies.map((tech: string) => (
             <div class='badge badge-outline'>{tech}</div>

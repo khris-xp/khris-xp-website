@@ -49,7 +49,7 @@
         },
         {
             "name": "CE Boostup XI Grader",
-            "description": "This is a grader website for CE BoostUp XI.",
+            "description": "This is a grader website for CE BoostUp XI. This website is used to practice programming skills.",
             "image": "/content/ce-boostupxi.png",
             "links": "https://github.com/khris-xp/boostupxi-web",
             "technologies": [
@@ -61,7 +61,7 @@
         },
         {
             "name": "Youtube Clone",
-            "description": "This project is a YouTube clone built with React, TypeScript, Tailwind CSS, and Material UI, using the YouTube v3 API from Rapid API. It includes features like searching for and watching videos.",
+            "description": "This project is a YouTube clone built with React, TypeScript, Tailwind CSS, and Material UI.",
             "image": "/content/youtube-clone.png",
             "links": "https://incomparable-liger-2b5f83.netlify.app/",
             "technologies": [
