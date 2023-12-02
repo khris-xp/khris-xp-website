@@ -1,1 +1,30 @@
-<div>Project Pages</div>
+---
+import Layout from '@layouts/Layout.astro';
+import projects from '@content/projects.json';
+import Card from '@components/Card.astro';
+
+const projectData = projects.projects;
+---
+
+<Layout title='Project'>
+  <div class='font-jamjuri'>
+    <div class='flex justify-center text-4xl py-20 font-medium'>Projects</div>
+    <div class='flex justify-center mx-auto container mb-32'>
+      <div class='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-16'>
+        {
+          projectData.map((project) => (
+            <Card
+              key={project.name}
+              name={project.name}
+              description={project.description}
+              link={project.links}
+              image={project.image}
+              technologies={project.technologies}
+              position={project.position}
+            />
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</Layout>
