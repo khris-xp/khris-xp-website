@@ -6,8 +6,10 @@ import projects from '@content/projects.json';
 import type { TProject } from 'types/project';
 import TimeLine from '@components/TimeLine.astro';
 import About from '@components/About.astro';
+import { fetchProject } from 'script/fetchProject';
 
-const projectsData = projects.projects as unknown as TProject[];
+const projectsDataStatic = projects.projects as unknown as TProject[];
+const projectData = await fetchProject(projectsDataStatic);
 ---
 
 <Layout title='Home'>
@@ -27,7 +29,7 @@ const projectsData = projects.projects as unknown as TProject[];
     <div class='flex justify-center mx-auto container'>
       <div class='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-16'>
         {
-          projectsData.map((project) => (
+          projectData.map((project) => (
             <Card
               key={project.name}
               name={project.name}

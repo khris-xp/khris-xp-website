@@ -72,6 +72,18 @@
                 "Youtube API"
             ],
             "position": "Frontend Developer"
+        },
+        {
+            "name": "Real Estate Website",
+            "description": "This project is a real estate website that includes features such as searching for properties, filtering, and sorting. It uses Next.js, TypeScript, Tailwind CSS, and the Rapid API.",
+            "image": "/content/real-estate-web.png",
+            "links": "https://sprightly-bonbon-a38c69.netlify.app/",
+            "technologies": [
+                "Typescript",
+                "Nextjs",
+                "Tailwindcss"
+            ],
+            "position": "Frontend Developer"
         }
     ]
 }
