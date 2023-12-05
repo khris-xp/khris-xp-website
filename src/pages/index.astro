@@ -3,12 +3,11 @@ import Hero from '@components/Hero.astro';
 import Card from '@components/Card.astro';
 import Layout from '@layouts/Layout.astro';
 import projects from '@content/projects.json';
-import type { TProject } from 'types/project';
 import TimeLine from '@components/TimeLine.astro';
 import About from '@components/About.astro';
 import { fetchProject } from 'script/fetchProject';
 
-const projectsDataStatic = projects.projects as unknown as TProject[];
+const projectsDataStatic = projects.projects;
 const projectData = await fetchProject(projectsDataStatic);
 ---
 
@@ -26,7 +25,7 @@ const projectData = await fetchProject(projectsDataStatic);
       <TimeLine />
     </div>
     <div class='flex justify-center text-4xl py-20 font-medium'>Projects</div>
-    <div class='flex justify-center mx-auto container'>
+    <div class='flex justify-center mx-auto container px-10'>
       <div class='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-16'>
         {
           projectData.map((project) => (
