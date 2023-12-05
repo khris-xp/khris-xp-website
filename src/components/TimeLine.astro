@@ -1,70 +1,38 @@
-<ul class='timeline timeline-vertical'>
-  <li>
-    <div class='timeline-start timeline-box'>
-      <h5 class='font-semibold text-primary'>IT Support Internship</h5>
-      <h6 class='font-normal'>CareerVio</h6>
-      <p class='text-sm text-gray-500'>Febuary 2021 - August 2023</p>
-    </div>
-    <div class='timeline-middle'>
-      <svg
-        xmlns='http://www.w3.org/2000/svg'
-        viewBox='0 0 20 20'
-        fill='currentColor'
-        class='w-5 h-5 text-primary'
-        ><path
-          fill-rule='evenodd'
-          d='M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z'
-          clip-rule='evenodd'></path></svg
-      >
-    </div>
-    <hr class='bg-primary' />
-  </li>
-  <li>
-    <hr class='bg-primary' />
-    <div class='timeline-middle'>
-      <svg
-        xmlns='http://www.w3.org/2000/svg'
-        viewBox='0 0 20 20'
-        fill='currentColor'
-        class='w-5 h-5 text-primary'
-        ><path
-          fill-rule='evenodd'
-          d='M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z'
-          clip-rule='evenodd'></path></svg
-      >
-    </div>
-    <div class='timeline-end timeline-box'>
-      <h5 class='font-semibold text-primary'>Frontend Developer Internship</h5>
-      <h6 class='font-normal'>Mr.Fox Live House</h6>
-      <p class='text-sm text-gray-500'>June 2023 - September 2023</p>
-    </div>
-    <hr class='bg-primary' />
-  </li>
-  <li>
-    <hr class='bg-primary' />
-    <div class='timeline-start timeline-box'>
-      <h5 class='font-semibold text-primary'>Frontend Developer</h5>
-      <h6 class='font-normal'>Chulalongkorn University (Tamsang Tamsong)</h6>
-      <p class='text-sm text-gray-500'>July 2023 - Present</p>
-    </div>
-    <div class='timeline-middle'>
-      <svg
-        xmlns='http://www.w3.org/2000/svg'
-        viewBox='0 0 20 20'
-        fill='currentColor'
-        class='w-5 h-5 text-primary'
-        ><path
-          fill-rule='evenodd'
-          d='M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z'
-          clip-rule='evenodd'></path></svg
-      >
-    </div>
-    <hr />
-  </li>
-  <li>
-    <hr />
-  </li>
-  <li>
-    <hr />
-  </li>
-</ul>
+---
+import experience from '../content/experience.json';
+
+const experienceData = experience.experience;
+---
+
+<section class='mt-10'>
+  <div class='grid lg:grid-cols-2 grid-cols-1 gap-x-12 gap-y-10'>
+    {
+      experienceData.map((experience) => (
+        <div class='flex items-start lg:gap-x-6 gap-x-4 max-w-2xl relative before:absolute before:bottom-0 before:top-[5rem] before:left-9 before:w-[1px] before:h-[calc(100%-70px)] dark:before:bg-zinc-800 before:bg-zinc-200'>
+          <a
+            href='/'
+            rel='noreferrer noopener'
+            target='_blank'
+            class='grid place-items-center dark:bg-primary-bg bg-secondary-bg border dark:border-zinc-800 border-zinc-200 min-h-[80px] min-w-[80px] p-2 rounded-md overflow-clip relative'
+          >
+            <img
+              src={experience.image}
+              class='object-cover duration-300 w-12 h-12'
+              alt={`${experience.company} logo`}
+            />
+          </a>
+          <div class='flex flex-col items-start'>
+            <h3 class='text-xl font-bold'>{experience.company}</h3>
+            <p>{experience.designation}</p>
+            <time class='text-sm text-zinc-500 mt-2 tracking-widest uppercase'>
+              {experience.duration}
+            </time>
+            <p class='tracking-tight dark:text-zinc-400 text-zinc-600 my-4'>
+              {experience.description}
+            </p>
+          </div>
+        </div>
+      ))
+    }
+  </div>
+</section>

@@ -84,6 +84,18 @@
                 "Tailwindcss"
             ],
             "position": "Frontend Developer"
+        },
+        {
+            "name": "Pokedex Beginner",
+            "description": "This project is a Pokedex that includes features such as searching for Pokemon. It uses Svelte, TypeScript, Tailwind CSS, and the PokeAPI.",
+            "image": "/content/pokedex-beginner.png",
+            "links": "https://pokedex-beginner.vercel.app/",
+            "technologies": [
+                "Svelte",
+                "Typescript",
+                "Tailwindcss"
+            ],
+            "position": "Frontend Developer"
         }
     ]
 }
