@@ -1,0 +1,31 @@
+---
+import Layout from '@layouts/Layout.astro';
+import CompetitionCard from '@components/CompetitionCard.astro';
+import competition from '@content/competition.json';
+
+const competitionData = competition.competition;
+---
+
+<Layout title='Competition'>
+  <div class='font-jamjuri'>
+    <div class='flex justify-center text-4xl py-20 font-medium'>Competition</div>
+    <div class='flex justify-center mx-auto container mb-32'>
+      <div class='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-16'>
+        {
+          competitionData.map((competition) => (
+            <CompetitionCard
+              key={competition.name}
+              name={competition.name}
+              description={competition.description}
+              duration={competition.duration}
+              location={competition.location}
+              position={competition.position}
+              link={competition.link}
+              image={competition.image}
+            />
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</Layout>

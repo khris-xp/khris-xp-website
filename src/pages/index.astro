@@ -1,14 +1,19 @@
 ---
 import Hero from '@components/Hero.astro';
-import Card from '@components/Card.astro';
+import ProjectCard from '@components/ProjectCard.astro';
 import Layout from '@layouts/Layout.astro';
 import projects from '@content/projects.json';
 import TimeLine from '@components/TimeLine.astro';
 import About from '@components/About.astro';
 import { fetchProject } from 'script/fetchProject';
+import { fetchCompetition } from 'script/fetchCompetition';
+import competition from '@content/competition.json';
+import CompetitionCard from '@components/CompetitionCard.astro';
 
 const projectsDataStatic = projects.projects;
+const competitionDataStatic = competition.competition;
 const projectData = await fetchProject(projectsDataStatic);
+const competitionData = await fetchCompetition(competitionDataStatic);
 ---
 
 <Layout title='Home'>
@@ -29,7 +34,7 @@ const projectData = await fetchProject(projectsDataStatic);
       <div class='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-16'>
         {
           projectData.map((project) => (
-            <Card
+            <ProjectCard
               key={project.name}
               name={project.name}
               description={project.description}
@@ -46,6 +51,32 @@ const projectData = await fetchProject(projectsDataStatic);
       class='flex justify-center text-2xl font-semibold text-blue-500 hover:text-blue-800 duration-200 hover:underline my-20'
     >
       <a href='/project'>Explore more project</a>
+    </div>
+    <div class='flex justify-center text-4xl py-20 font-medium'>
+      Competition
+    </div>
+    <div class='flex justify-center mx-auto container px-10'>
+      <div class='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-16'>
+        {
+          competitionData.map((competition) => (
+            <CompetitionCard
+              key={competition.name}
+              name={competition.name}
+              description={competition.description}
+              duration={competition.duration}
+              location={competition.location}
+              position={competition.position}
+              link={competition.link}
+              image={competition.image}
+            />
+          ))
+        }
+      </div>
+    </div>
+    <div
+      class='flex justify-center text-2xl font-semibold text-blue-500 hover:text-blue-800 duration-200 hover:underline my-20'
+    >
+      <a href='/competition'>Explore more competition</a>
     </div>
   </div>
 </Layout>

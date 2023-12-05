@@ -1,20 +1,12 @@
 {
     "experience": [
         {
-            "company": "CareerVio",
-            "designation": "IT Support Internship",
-            "duration": "Febuary 2021 - April 2021",
+            "company": "Tamsang Tamsong",
+            "designation": "Frontend Developer",
+            "duration": "July 2023 - Present",
             "location": "Bangkok, Thailand",
-            "image": "/experience/careervio.png",
-            "description": "When I was in this company I worked as an IT support managing the lms (learning management system) for their product called Careervio."
-        },
-        {
-            "company": "CareerVio",
-            "designation": "IT Support",
-            "duration": "April 2021 - August 2021",
-            "location": "Bangkok, Thailand",
-            "image": "/experience/careervio.png",
-            "description": "When I was in this company I worked as an IT support managing the lms (learning management system) for their product called Careervio."
+            "image": "/experience/tamsang-tamsong.png",
+            "description": "Collaborated with Chulalongkorn University to develop Tamsang-Tamsong. On-Demand Delivery Platform to Foster Social Solidarity Economy in Thailand."
         },
         {
             "company": "Mr.Fox Live House",
@@ -25,12 +17,20 @@
             "description": "When I did an internship at this company ,I worked as a frontend developer who would take care of the marketplace and admin dashboard of the project called Wizglee, a web application that would be the company’s digital access trading platform."
         },
         {
-            "company": "Tamsang Tamsong",
-            "designation": "Frontend Developer",
-            "duration": "July 2023 - Present",
+            "company": "CareerVio",
+            "designation": "IT Support",
+            "duration": "April 2021 - August 2023",
             "location": "Bangkok, Thailand",
-            "image": "/experience/tamsang-tamsong.png",
-            "description": "Collaborated with Chulalongkorn University to develop Tamsang-Tamsong. On-Demand Delivery Platform to Foster Social Solidarity Economy in Thailand."
+            "image": "/experience/careervio.png",
+            "description": "When I was in this company I worked as an IT support managing the lms (learning management system) for their product called Careervio."
+        },
+        {
+            "company": "CareerVio",
+            "designation": "IT Support Internship",
+            "duration": "Febuary 2021 - April 2021",
+            "location": "Bangkok, Thailand",
+            "image": "/experience/careervio.png",
+            "description": "When I was in this company I worked as an IT support managing the lms (learning management system) for their product called Careervio."
         }
     ]
 }
