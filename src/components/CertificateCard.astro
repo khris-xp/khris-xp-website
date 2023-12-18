@@ -1,0 +1,16 @@
+---
+const { name, position, image } = Astro.props;
+Astro.props;
+---
+
+<div class='group flex flex-col gap-4 transition-all hover:scale-[1.005] cursor-pointer'>
+  <img class='aspect-video w-full bg-neutral-200' src={`${image}`} alt={name} />
+  <div class='grid gap-1'>
+    <h3 class='text-xl font-medium underline-offset-2 group-hover:underline'>
+      {name}
+    </h3>
+    <div>
+      {position}
+    </div>
+  </div>
+</div>

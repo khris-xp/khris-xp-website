@@ -9,12 +9,12 @@
             "description": "Collaborated with Chulalongkorn University to develop Tamsang-Tamsong. On-Demand Delivery Platform to Foster Social Solidarity Economy in Thailand."
         },
         {
-            "company": "Mr.Fox Live House",
+            "company": "Dev Mountain Camp",
             "designation": "Frontend Developer Internship",
-            "duration": "June 2023 - September 2023",
+            "duration": "June 2023 - July 2023",
             "location": "Bangkok, Thailand",
-            "image": "/experience/mr-fox.png",
-            "description": "When I did an internship at this company ,I worked as a frontend developer who would take care of the marketplace and admin dashboard of the project called Wizglee, a web application that would be the company’s digital access trading platform."
+            "image": "/experience/devmountain.jpeg",
+            "description": "Internship, frontend developer role, Wizglee project involvement, responsibilities for marketplace and admin dashboard in the development of a digital access trading platform."
         },
         {
             "company": "CareerVio",
@@ -22,7 +22,7 @@
             "duration": "April 2021 - August 2023",
             "location": "Bangkok, Thailand",
             "image": "/experience/careervio.png",
-            "description": "When I was in this company I worked as an IT support managing the lms (learning management system) for their product called Careervio."
+            "description": "In the company, assumed responsibilities as an IT support specialist overseeing the Learning Management System (LMS) for the Careervio product."
         },
         {
             "company": "CareerVio",
@@ -30,7 +30,7 @@
             "duration": "Febuary 2021 - April 2021",
             "location": "Bangkok, Thailand",
             "image": "/experience/careervio.png",
-            "description": "When I was in this company I worked as an IT support managing the lms (learning management system) for their product called Careervio."
+            "description": "In the company, assumed responsibilities as an IT support specialist overseeing the Learning Management System (LMS) for the Careervio product."
         }
     ]
 }

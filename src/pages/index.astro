@@ -8,12 +8,17 @@ import About from '@components/About.astro';
 import { fetchProject } from 'script/fetchProject';
 import { fetchCompetition } from 'script/fetchCompetition';
 import competition from '@content/competition.json';
+import certificate from '@content/certificate.json';
 import CompetitionCard from '@components/CompetitionCard.astro';
+import CertificateCard from '@components/CertificateCard.astro';
+import { fetchCertificate } from 'script/fetchCertificate';
 
 const projectsDataStatic = projects.projects;
 const competitionDataStatic = competition.competition;
+const certificateDataStatic = certificate.certificate;
 const projectData = await fetchProject(projectsDataStatic);
 const competitionData = await fetchCompetition(competitionDataStatic);
+const certificateData = await fetchCertificate(certificateDataStatic);
 ---
 
 <Layout title='Home'>
@@ -77,6 +82,28 @@ const competitionData = await fetchCompetition(competitionDataStatic);
       class='flex justify-center text-2xl font-semibold text-blue-500 hover:text-blue-800 duration-200 hover:underline my-20'
     >
       <a href='/competition'>Explore more competition</a>
+    </div>
+    <div class='flex justify-center text-4xl py-20 font-medium'>
+      Certificate
+    </div>
+    <div class='flex justify-center mx-auto container px-10'>
+      <div class='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-16'>
+        {
+          certificateData.map((certificateData) => (
+            <CertificateCard
+              key={certificateData.name}
+              name={certificateData.name}
+              position={certificateData.position}
+              image={certificateData.image}
+            />
+          ))
+        }
+      </div>
+    </div>
+    <div
+      class='flex justify-center text-2xl font-semibold text-blue-500 hover:text-blue-800 duration-200 hover:underline my-20'
+    >
+      <a href='/'>Explore more certificate</a>
     </div>
   </div>
 </Layout>
