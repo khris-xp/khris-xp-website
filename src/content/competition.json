@@ -1,6 +1,15 @@
 {
     "competition": [
         {
+            "name": "Shenanihacks",
+            "description": "A test hackathon to test-run our backend systems",
+            "duration": "December 2023 - December 2023",
+            "location": "Online",
+            "position": "Fullstack Developer",
+            "image": "/competition/shenanihack.png",
+            "link": "https://wafflehackstesting.devpost.com/?ref_feature=challenge&ref_medium=your-open-hackathons&ref_content=Submissions+open"
+        },
+        {
             "name": "Application development competition for carbon offset in small business units",
             "description": "Complete in our Application Development Challenge for Small Business Carbon Offset. Create solutions fostering eco- friendly practices, enabling small business to measure and offset their carbon footprint. My teamwork joined promote sustainability through innovative applications.",
             "duration": "March 2023 - November 2023",
