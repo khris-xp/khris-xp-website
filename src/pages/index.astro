@@ -42,7 +42,6 @@ const certificateData = await fetchCertificate(certificateDataStatic);
             <ProjectCard
               key={project.name}
               name={project.name}
-              description={project.description}
               link={project.links}
               image={project.image}
               technologies={project.technologies}
@@ -67,7 +66,6 @@ const certificateData = await fetchCertificate(certificateDataStatic);
             <CompetitionCard
               key={competition.name}
               name={competition.name}
-              description={competition.description}
               duration={competition.duration}
               location={competition.location}
               position={competition.position}
@@ -103,7 +101,7 @@ const certificateData = await fetchCertificate(certificateDataStatic);
     <div
       class='flex justify-center text-2xl font-semibold text-blue-500 hover:text-blue-800 duration-200 hover:underline my-20'
     >
-      <a href='/'>Explore more certificate</a>
+      <a href='/certificate'>Explore more certificate</a>
     </div>
   </div>
 </Layout>
