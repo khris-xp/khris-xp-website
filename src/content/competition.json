@@ -1,40 +1,40 @@
 {
-    "competition": [
-        {
-            "name": "Shenanihacks",
-            "description": "A test hackathon to test-run our backend systems",
-            "duration": "December 2023 - December 2023",
-            "location": "Online",
-            "position": "Fullstack Developer",
-            "image": "/competition/shenanihack.png",
-            "link": "https://wafflehackstesting.devpost.com/?ref_feature=challenge&ref_medium=your-open-hackathons&ref_content=Submissions+open"
-        },
-        {
-            "name": "Application development competition for carbon offset in small business units",
-            "description": "Complete in our Application Development Challenge for Small Business Carbon Offset. Create solutions fostering eco- friendly practices, enabling small business to measure and offset their carbon footprint. My teamwork joined promote sustainability through innovative applications.",
-            "duration": "March 2023 - November 2023",
-            "location": "Bangkok, Thailand",
-            "position": "Frontend Developer",
-            "image": "/competition/carbon.webp",
-            "link": "https://cep.or.th/carbonapp-01/"
-        },
-        {
-            "name": "The โง่ Hackathon ครั้งที่ 7 เเห่งประเทศ Thailand",
-            "description": "The Stupid Hackathon in Thailand is a hackathon that does not have a business or competition purpose. The main goal is for makers to have fun and release crazy projects that no one else wants. There is no business focus on whether this product will actually work or not. By emphasizing that everyone can have fun together.",
-            "duration": "June 2023 - June 2023",
-            "location": "Bangkok, Thailand",
-            "position": "Frontend Developer",
-            "image": "/competition/stupid-hackathon.jpg",
-            "link": "https://stupid.hackathon.in.th/7/"
-        },
-        {
-            "name": "DEV HACK “World of Hackathon”",
-            "description": "Mr.FOX and <DEVCLUB> organized a hackathon at Mr.FOX Live House to solve application development challenges for Creator Platforms, with prizes worth over 15,000 Baht from top technology companies.",
-            "duration": "March 2023 - March 2023",
-            "location": "Bangkok, Thailand",
-            "position": "Frontend Developer",
-            "image": "/competition/dev-hack.jpg",
-            "link": "https://www.youtube.com/watch?v=C74uTzPNpNE"
-        }
-    ]
+  "competition": [
+    {
+      "name": "Shenanihacks",
+      "description": "A test hackathon to test-run our backend systems",
+      "duration": "December 2023 - December 2023",
+      "location": "Online",
+      "position": "Fullstack Developer",
+      "image": "/competition/shenanihack.png",
+      "link": "https://wafflehackstesting.devpost.com/?ref_feature=challenge&ref_medium=your-open-hackathons&ref_content=Submissions+open"
+    },
+    {
+      "name": "Application development competition for carbon offset in small business units",
+      "description": "Complete in our Application Development Challenge for Small Business Carbon Offset. Create solutions fostering eco- friendly practices, enabling small business to measure and offset their carbon footprint. My teamwork joined promote sustainability through innovative applications.",
+      "duration": "March 2023 - November 2023",
+      "location": "Bangkok, Thailand",
+      "position": "Frontend Developer",
+      "image": "/competition/carbon.webp",
+      "link": "https://cep.or.th/carbonapp-01/"
+    },
+    {
+      "name": "The โง่ Hackathon ครั้งที่ 7 เเห่งประเทศ Thailand",
+      "description": "The Stupid Hackathon in Thailand is a hackathon that does not have a business or competition purpose. The main goal is for makers to have fun and release crazy projects that no one else wants. There is no business focus on whether this product will actually work or not. By emphasizing that everyone can have fun together.",
+      "duration": "June 2023 - June 2023",
+      "location": "Bangkok, Thailand",
+      "position": "Frontend Developer",
+      "image": "/competition/stupid-hackathon.jpg",
+      "link": "https://stupid.hackathon.in.th/7/"
+    },
+    {
+      "name": "DEV HACK “World of Hackathon”",
+      "description": "Mr.FOX and <DEVCLUB> organized a hackathon at Mr.FOX Live House to solve application development challenges for Creator Platforms, with prizes worth over 15,000 Baht from top technology companies.",
+      "duration": "March 2023 - March 2023",
+      "location": "Bangkok, Thailand",
+      "position": "Frontend Developer",
+      "image": "/competition/dev-hack.jpg",
+      "link": "https://www.youtube.com/watch?v=C74uTzPNpNE"
+    }
+  ]
 }

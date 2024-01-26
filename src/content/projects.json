@@ -1,115 +1,102 @@
 {
-    "projects": [
-        {
-        "name": "Digital Mint Exchange",
-        "description": "Your secure and user-friendly hub for buying and selling cryptocurrencies. Trade effortlessly with real-time data and a diverse range of assets. Explore the digital market confidently with us.",
-        "image": "/content/digital-mint-exchange.png",
-        "links": "https://github.com/khris-xp/digital-mint-exchange",
-        "technologies": [
-            "React",
-            "Tailwindcss",
-            "DaisyUI",
-            "NestJs",
-            "Postgresql"
-        ],
-        "position": "Fullstack Developer"
-        },
-        {
-            "name": "Dishdeck API",
-            "description": "Platform for sharing detailed food recipes, perfect for food enthusiasts and bloggers to explore and contribute to a rich culinary knowledge base.",
-            "image": "/content/go-fiber.webp",
-            "links": "https://github.com/khris-xp/dishdeck-api",
-            "technologies": [
-                "Go Fiber",
-                "MongoDB"
-            ],
-            "position": "Backend Developer"
-        },
-        {
-            "name": "open.source.in.th",
-            "description": "Platform for sharing detailed food recipes, perfect for food enthusiasts and bloggers to explore and contribute to a rich culinary knowledge base.",
-            "image": "/content/open-source-in-th.png",
-            "links": "https://open.source.in.th",
-            "technologies": [
-                "Astro",
-                "TailwindCSS"
-            ],
-            "position": "Frontend Developer"
-        },
-        {
-            "name": "X-Clone",
-            "description": "HCRL Twitter Clone: A platform for HCRL researchers to share and collaborate on research findings.",
-            "image": "/content/x-clone.png",
-            "links": "https://x-clone-xi.vercel.app",
-            "technologies": [
-                "Typescript",
-                "Nextjs",
-                "Nodejs",
-                "TailwindCSS",
-                "MongoDB"
-            ],
-            "position": "Fullstack Developer"
-        },
-        {
-            "name": "SAIG Techmastery",
-            "description": "SAIG Web Application for registered training session and submit project.",
-            "image": "/content/saig-techmastery.png",
-            "links": "https://techmastery.ce-saig.com/",
-            "technologies": [
-                "SvelteKit",
-                "TailwindCSS"
-            ],
-            "position": "Frontend Developer"
-        },
-        {
-            "name": "CE Boostup XI Grader",
-            "description": "This is a grader website for CE BoostUp XI. This website is used to practice programming skills.",
-            "image": "/content/ce-boostupxi.png",
-            "links": "https://github.com/khris-xp/boostupxi-web",
-            "technologies": [
-                "SvelteKit",
-                "TailwindCSS",
-                "Nextjs"
-            ],
-            "position": "Frontend Developer"
-        },
-        {
-            "name": "Youtube Clone",
-            "description": "This project is a YouTube clone built with React, TypeScript, Tailwind CSS, and Material UI.",
-            "image": "/content/youtube-clone.png",
-            "links": "https://incomparable-liger-2b5f83.netlify.app/",
-            "technologies": [
-                "React",
-                "Typescript",
-                "TailwindCSS",
-                "Material UI",
-                "Youtube API"
-            ],
-            "position": "Frontend Developer"
-        },
-        {
-            "name": "Real Estate Website",
-            "description": "This project is a real estate website that includes features such as searching for properties, filtering, and sorting. It uses Next.js, TypeScript, Tailwind CSS, and the Rapid API.",
-            "image": "/content/real-estate-web.png",
-            "links": "https://sprightly-bonbon-a38c69.netlify.app/",
-            "technologies": [
-                "Typescript",
-                "Nextjs",
-                "Tailwindcss"
-            ],
-            "position": "Frontend Developer"
-        },
-        {
-            "name": "Pokedex Beginner",
-            "description": "This project is a Pokedex that includes features such as searching for Pokemon. It uses Svelte, TypeScript, Tailwind CSS, and the PokeAPI.",
-            "image": "/content/pokedex-beginner.png",
-            "links": "https://pokedex-beginner.vercel.app/",
-            "technologies": [
-                "Svelte",
-                "Typescript",
-                "Tailwindcss"
-            ],
-            "position": "Frontend Developer"
-        }
-    ]
+  "projects": [
+    {
+      "name": "Coffee Shop Starbo",
+      "description": "Coffee Shop Starbo is a web application for ordering coffee online.",
+      "image": "/content/coffee-shop-starbo.png",
+      "links": "https://aesthetic-parfait-b450cb.netlify.app",
+      "technologies": ["React", "Typescript", "Tailwindcss"],
+      "position": "Frontend Developer"
+    },
+    {
+      "name": "Digital Mint Exchange",
+      "description": "Your secure and user-friendly hub for buying and selling cryptocurrencies. Trade effortlessly with real-time data and a diverse range of assets. Explore the digital market confidently with us.",
+      "image": "/content/digital-mint-exchange.png",
+      "links": "https://github.com/khris-xp/digital-mint-exchange",
+      "technologies": [
+        "React",
+        "Tailwindcss",
+        "DaisyUI",
+        "NestJs",
+        "Postgresql"
+      ],
+      "position": "Fullstack Developer"
+    },
+    {
+      "name": "Dishdeck API",
+      "description": "Platform for sharing detailed food recipes, perfect for food enthusiasts and bloggers to explore and contribute to a rich culinary knowledge base.",
+      "image": "/content/go-fiber.webp",
+      "links": "https://github.com/khris-xp/dishdeck-api",
+      "technologies": ["Go Fiber", "MongoDB"],
+      "position": "Backend Developer"
+    },
+    {
+      "name": "open.source.in.th",
+      "description": "Platform for sharing detailed food recipes, perfect for food enthusiasts and bloggers to explore and contribute to a rich culinary knowledge base.",
+      "image": "/content/open-source-in-th.png",
+      "links": "https://open.source.in.th",
+      "technologies": ["Astro", "TailwindCSS"],
+      "position": "Frontend Developer"
+    },
+    {
+      "name": "X-Clone",
+      "description": "HCRL Twitter Clone: A platform for HCRL researchers to share and collaborate on research findings.",
+      "image": "/content/x-clone.png",
+      "links": "https://x-clone-xi.vercel.app",
+      "technologies": [
+        "Typescript",
+        "Nextjs",
+        "Nodejs",
+        "TailwindCSS",
+        "MongoDB"
+      ],
+      "position": "Fullstack Developer"
+    },
+    {
+      "name": "SAIG Techmastery",
+      "description": "SAIG Web Application for registered training session and submit project.",
+      "image": "/content/saig-techmastery.png",
+      "links": "https://techmastery.ce-saig.com/",
+      "technologies": ["SvelteKit", "TailwindCSS"],
+      "position": "Frontend Developer"
+    },
+    {
+      "name": "CE Boostup XI Grader",
+      "description": "This is a grader website for CE BoostUp XI. This website is used to practice programming skills.",
+      "image": "/content/ce-boostupxi.png",
+      "links": "https://github.com/khris-xp/boostupxi-web",
+      "technologies": ["SvelteKit", "TailwindCSS", "Nextjs"],
+      "position": "Frontend Developer"
+    },
+    {
+      "name": "Youtube Clone",
+      "description": "This project is a YouTube clone built with React, TypeScript, Tailwind CSS, and Material UI.",
+      "image": "/content/youtube-clone.png",
+      "links": "https://incomparable-liger-2b5f83.netlify.app/",
+      "technologies": [
+        "React",
+        "Typescript",
+        "TailwindCSS",
+        "Material UI",
+        "Youtube API"
+      ],
+      "position": "Frontend Developer"
+    },
+    {
+      "name": "Real Estate Website",
+      "description": "This project is a real estate website that includes features such as searching for properties, filtering, and sorting. It uses Next.js, TypeScript, Tailwind CSS, and the Rapid API.",
+      "image": "/content/real-estate-web.png",
+      "links": "https://sprightly-bonbon-a38c69.netlify.app/",
+      "technologies": ["Typescript", "Nextjs", "Tailwindcss"],
+      "position": "Frontend Developer"
+    },
+    {
+      "name": "Pokedex Beginner",
+      "description": "This project is a Pokedex that includes features such as searching for Pokemon. It uses Svelte, TypeScript, Tailwind CSS, and the PokeAPI.",
+      "image": "/content/pokedex-beginner.png",
+      "links": "https://pokedex-beginner.vercel.app/",
+      "technologies": ["Svelte", "Typescript", "Tailwindcss"],
+      "position": "Frontend Developer"
+    }
+  ]
 }
