@@ -1,6 +1,14 @@
 {
   "experience": [
     {
+      "company": "Gabriel Ns Limited (Kryptodian)",
+      "designation": "Junior Full Stack Developer",
+      "duration": "January 2024 - Present",
+      "location": "Bangkok, Thailand",
+      "image": "/experience/kryptodian.png",
+      "description": "Fuel innovation at Kryptodian, crafting a cutting-edge platform that seamlessly integrates digital asset custody, trade, staking, treasury operations, and governance."
+    },
+    {
       "company": "Tamsang Tamsong",
       "designation": "Frontend Developer",
       "duration": "July 2023 - Present",
@@ -27,7 +35,7 @@
     {
       "company": "CareerVio",
       "designation": "IT Support Internship",
-      "duration": "Febuary 2021 - April 2021",
+      "duration": "February 2021 - April 2021",
       "location": "Bangkok, Thailand",
       "image": "/experience/careervio.png",
       "description": "In the company, assumed responsibilities as an IT support specialist overseeing the Learning Management System (LMS) for the Careervio product."
