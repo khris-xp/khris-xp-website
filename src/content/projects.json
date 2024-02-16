@@ -1,6 +1,14 @@
 {
   "projects": [
     {
+      "name": "Bubble Tea Cafe API",
+      "description": "Web Development CEIP Project.",
+      "image": "/content/go-fiber.webp",
+      "links": "https://github.com/khris-xp/bubble-tea-cafe-api",
+      "technologies": ["Go Fiber", "MongoDB"],
+      "position": "Backend Developer"
+    },
+    {
       "name": "Coffee Shop Starbo",
       "description": "Coffee Shop Starbo is a web application for ordering coffee online.",
       "image": "/content/coffee-shop-starbo.png",
