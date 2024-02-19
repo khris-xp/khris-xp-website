@@ -1,0 +1,64 @@
+{
+  "skills": [
+    {
+      "name": "HTML",
+      "image": "https://cdn-icons-png.flaticon.com/512/1532/1532556.png",
+      "category": "Frontend Development"
+    },
+    {
+      "name": "CSS",
+      "image": "https://cdn-icons-png.flaticon.com/512/732/732190.png",
+      "category": "Frontend Development"
+    },
+    {
+      "name": "JavaScript",
+      "image": "https://cdn.worldvectorlogo.com/logos/javascript-1.svg",
+      "category": "Frontend Development"
+    },
+    {
+      "name": "TypeScript",
+      "image": "https://cdn.worldvectorlogo.com/logos/typescript.svg",
+      "category": "Frontend Development"
+    },
+    {
+      "name": "React",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png",
+      "category": "Frontend Development"
+    },
+    {
+      "name": "Svelte",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Svelte_Logo.svg/1200px-Svelte_Logo.svg.png",
+      "category": "Frontend Development"
+    },
+    {
+      "name": "Nextjs",
+      "image": "https://www.svgrepo.com/show/354113/nextjs-icon.svg",
+      "category": "Frontend Development"
+    },
+    {
+      "name": "Node.js",
+      "image": "https://cdn-icons-png.flaticon.com/512/919/919825.png",
+      "category": "Backend Development"
+    },
+    {
+      "name": "Nestjs",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/a/a8/NestJS.svg",
+      "category": "Backend Development"
+    },
+    {
+      "name": "Golang",
+      "image": "https://go.dev/blog/go-brand/Go-Logo/PNG/Go-Logo_Blue.png",
+      "category": "Backend Development"
+    },
+    {
+      "name": "SQL",
+      "image": "https://seeklogo.com/images/A/azure-sql-logo-3AE930D2AF-seeklogo.com.png",
+      "category": "Database"
+    },
+    {
+      "name": "MongoDB",
+      "image": "https://www.svgrepo.com/show/331488/mongodb.svg",
+      "category": "Database"
+    }
+  ]
+}

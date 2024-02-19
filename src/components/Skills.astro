@@ -1,0 +1,21 @@
+---
+import SkillCard from '../components/SkillCard.astro';
+import skill from '../content/skill.json';
+---
+
+<div class='flex justify-center'>
+  <div
+    class='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10'
+  >
+    {
+      skill.skills.map((item, index) => (
+        <SkillCard
+          key={index}
+          name={item.name}
+          image={item.image}
+          category={item.category}
+        />
+      ))
+    }
+  </div>
+</div>

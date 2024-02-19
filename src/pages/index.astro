@@ -12,6 +12,7 @@ import certificate from '@content/certificate.json';
 import CompetitionCard from '@components/CompetitionCard.astro';
 import CertificateCard from '@components/CertificateCard.astro';
 import { fetchCertificate } from 'script/fetchCertificate';
+import Skills from '@components/Skills.astro';
 
 const projectsDataStatic = projects.projects;
 const competitionDataStatic = competition.competition;
@@ -24,17 +25,25 @@ const certificateData = await fetchCertificate(certificateDataStatic);
 <Layout title='Home'>
   <div class='font-jamjuri'>
     <Hero />
-    <div class='flex justify-center text-4xl pt-20 pb-10 font-medium'>
-      About me
-    </div>
     <About />
-    <div class='flex justify-center text-4xl pt-20 pb-10 font-medium mt-16'>
-      Experiences
+    <div class='py-12 flex flex-col gap-4 container mx-auto'>
+      <p class='text-sm text-designColor tracking-[4px] uppercase'>Feature</p>
+      <h2 class='text-3xl md:text-4xl font-bold'>Development Skills</h2>
+    </div>
+    <div class='flex justify-center mx-auto container mb-16c'>
+      <Skills />
+    </div>
+    <div class='py-12 flex flex-col gap-4 container mx-auto'>
+      <p class='text-sm text-designColor tracking-[4px] uppercase'>Working</p>
+      <h2 class='text-3xl md:text-4xl font-bold'>Working Experience</h2>
     </div>
     <div class='flex justify-center mx-auto container mb-16'>
       <TimeLine />
     </div>
-    <div class='flex justify-center text-4xl py-20 font-medium'>Projects</div>
+    <div class='py-12 flex flex-col gap-4 container mx-auto'>
+      <p class='text-sm text-designColor tracking-[4px] uppercase'>Project</p>
+      <h2 class='text-3xl md:text-4xl font-bold'>Personal Project</h2>
+    </div>
     <div class='flex justify-center mx-auto container px-10'>
       <div class='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-16'>
         {
@@ -56,8 +65,11 @@ const certificateData = await fetchCertificate(certificateDataStatic);
     >
       <a href='/project'>Explore more project</a>
     </div>
-    <div class='flex justify-center text-4xl py-20 font-medium'>
-      Competitions
+    <div class='py-12 flex flex-col gap-4 container mx-auto'>
+      <p class='text-sm text-designColor tracking-[4px] uppercase'>
+        Competition
+      </p>
+      <h2 class='text-3xl md:text-4xl font-bold'>Competition and Event</h2>
     </div>
     <div class='flex justify-center mx-auto container px-10'>
       <div class='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-16'>
@@ -81,8 +93,11 @@ const certificateData = await fetchCertificate(certificateDataStatic);
     >
       <a href='/competition'>Explore more competition</a>
     </div>
-    <div class='flex justify-center text-4xl py-20 font-medium'>
-      Certificates
+    <div class='py-12 flex flex-col gap-4 container mx-auto'>
+      <p class='text-sm text-designColor tracking-[4px] uppercase'>
+        Certificate
+      </p>
+      <h2 class='text-3xl md:text-4xl font-bold'>Certificate and Bootcamp</h2>
     </div>
     <div class='flex justify-center mx-auto container px-10'>
       <div class='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-16'>
