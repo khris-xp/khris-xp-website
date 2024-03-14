@@ -1,6 +1,14 @@
 {
   "projects": [
     {
+      "name": "Tangti",
+      "description": "Web Application Development Project.",
+      "image": "/content/tangti.png",
+      "links": "https://kmitltangti.azurewebsites.net",
+      "technologies": ["ASP.net Core MVC", "MongoDB"],
+      "position": "Full Stack Developer"
+    },
+    {
       "name": "Bubble Tea Cafe API",
       "description": "Web Development CEIP Project.",
       "image": "/content/go-fiber.webp",
