@@ -1,6 +1,14 @@
 {
   "projects": [
     {
+      "name": "Rug Pull",
+      "description": "SAIG Web Application for registered training session and submit project.",
+      "image": "/content/rug-pull.png",
+      "links": "https://rug-pull-mocha.vercel.app",
+      "technologies": ["React", "Nodejs", "MongoDB", "TailwindCSS", "Redux"],
+      "position": "Full Stack Developer"
+    },
+    {
       "name": "Tangti",
       "description": "Web Application Development Project.",
       "image": "/content/tangti.png",
