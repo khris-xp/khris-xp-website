@@ -1,6 +1,15 @@
 {
   "competition": [
     {
+      "name": "Code in the Wind #2",
+      "description": "ร่วมสนุกกับกิจกรรมทดสอบความเร็วและทักษะด้าน frontend โดยผู้ร่วมสนุกจะได้รับภาพตัวอย่างเป็นดีไซน์ และมีเวลา 10 นาทีในการเขียนโค้ดเพื่อขึ้นหน้าเว็บตามแบบด้วย HTML และ Tailwind CSS",
+      "duration": "May 2024 - May 2024",
+      "location": "Bangkok, Thailand",
+      "position": "Frontend Developer",
+      "image": "/competition/code-wind.png",
+      "link": "https://www.eventpop.me/e/26957/wind2"
+    },
+    {
       "name": "Shenanihacks",
       "description": "A test hackathon to test-run our backend systems",
       "duration": "December 2023 - December 2023",
