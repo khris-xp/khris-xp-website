@@ -1,5 +1,6 @@
 ---
 import experience from '../content/experience.json';
+import { calculateExperingDate } from 'script/date';
 
 const experienceData = experience.experience;
 ---
@@ -25,7 +26,7 @@ const experienceData = experience.experience;
             <h3 class='text-xl font-bold'>{experience.company}</h3>
             <p>{experience.designation}</p>
             <time class='text-sm text-zinc-500 mt-2 tracking-widest uppercase'>
-              {experience.duration}
+              {experience.duration} | {calculateExperingDate(experience.startDate, experience.endDate)}
             </time>
             <p class='tracking-tight dark:text-zinc-400 text-zinc-600 my-4'>
               {experience.description}

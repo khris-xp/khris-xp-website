@@ -4,6 +4,8 @@
       "company": "Gabriel Ns Limited (Kryptodian)",
       "designation": "Junior Full Stack Developer",
       "duration": "January 2024 - Present",
+      "startDate": "2024-01-05",
+      "endDate": "Present",
       "location": "Bangkok, Thailand",
       "image": "/experience/kryptodian.png",
       "description": "Worked with the project Kryptodian to develop a platform related to digital asset custody, trading, financial operations. and supervision to be smooth and secure."
@@ -12,6 +14,8 @@
       "company": "Tamsang Tamsong",
       "designation": "Frontend Developer",
       "duration": "July 2023 - Present",
+      "startDate": "2023-07-11",
+      "endDate": "Present",
       "location": "Bangkok, Thailand",
       "image": "/experience/tamsang-tamsong.png",
       "description": "Collaborated with Chulalongkorn University to develop Tamsang-Tamsong. On-Demand Delivery Platform to Foster Social Solidarity Economy in Thailand."
@@ -20,6 +24,8 @@
       "company": "Dev Mountain Camp",
       "designation": "Frontend Developer Internship",
       "duration": "June 2023 - July 2023",
+      "startDate": "2023-06-1",
+      "endDate": "2023-07-31",
       "location": "Bangkok, Thailand",
       "image": "/experience/devmountain.jpeg",
       "description": "Internship, frontend developer role, Wizglee project involvement, responsibilities for marketplace and admin dashboard in the development of a digital access trading platform."
@@ -28,6 +34,8 @@
       "company": "CareerVio",
       "designation": "IT Support",
       "duration": "April 2021 - August 2023",
+      "startDate": "2021-04-01",
+      "endDate": "2023-08-31",
       "location": "Bangkok, Thailand",
       "image": "/experience/careervio.png",
       "description": "In the company, assumed responsibilities as an IT support specialist overseeing the Learning Management System (LMS) for the Careervio product."
@@ -36,6 +44,8 @@
       "company": "CareerVio",
       "designation": "IT Support Internship",
       "duration": "February 2021 - April 2021",
+      "startDate": "2021-02-01",
+      "endDate": "2021-04-30",
       "location": "Bangkok, Thailand",
       "image": "/experience/careervio.png",
       "description": "In the company, assumed responsibilities as an IT support specialist overseeing the Learning Management System (LMS) for the Careervio product."
