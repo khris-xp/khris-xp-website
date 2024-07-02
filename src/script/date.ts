@@ -13,9 +13,11 @@ export function calculateExperingDate(startDate: string, endDate: string) {
     (diff % (1000 * 60 * 60 * 24 * 365)) / (1000 * 60 * 60 * 24 * 30)
   );
 
-  if (years === 0) {
-    return `${months} months`;
-  } else {
-    return `${years} years ${months} months`;
-  }
+  return years === 0
+    ? months === 0
+      ? 'Less than a month'
+      : `${months} months`
+    : months === 0
+    ? `${years} years`
+    : `${years} years ${months} months`;
 }
