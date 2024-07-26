@@ -1,6 +1,15 @@
 {
   "competition": [
     {
+      "name": "Solstice by APEERS",
+      "description": "Hey there! At APEERS, we strive to provide students with equal opportunities when it comes to education and extracurricular activities. As part of this mission, we host free events that inspire students in a plethora of fields. In the past, we have hosted three events with nearly $100k in prizes and well over 700 participants (https://apeers.org/events). ",
+      "duration": "June 2024 - July 2024",
+      "location": "Online",
+      "position": "Full Stack Developer & Project Manager",
+      "image": "/competition/solstice-by-apeers.png",
+      "link": "https://apeers-solstice.devpost.com"
+    },
+    {
       "name": "Code in the Wind #2",
       "description": "ร่วมสนุกกับกิจกรรมทดสอบความเร็วและทักษะด้าน frontend โดยผู้ร่วมสนุกจะได้รับภาพตัวอย่างเป็นดีไซน์ และมีเวลา 10 นาทีในการเขียนโค้ดเพื่อขึ้นหน้าเว็บตามแบบด้วย HTML และ Tailwind CSS",
       "duration": "May 2024 - May 2024",
