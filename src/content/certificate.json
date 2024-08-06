@@ -4,6 +4,11 @@
       "name": "Certificate of Internship in Frontend Developer",
       "position": "Frontend Developer",
       "image": "/certificate/DevMountain.png"
+    },
+    {
+      "name": "Project Management Essentials",
+      "position": "Project Management",
+      "image": "/certificate/project-management-essential.png"
     }
   ]
 }
