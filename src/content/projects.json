@@ -1,6 +1,14 @@
 {
   "projects": [
     {
+      "name": "NoRegEX",
+      "description": "Theory of computation web application for learning regular expression.",
+      "image": "/content/noregex.png",
+      "links": "https://toc.onionstreasure.com",
+      "technologies": ["Nextjs", "TailwindCSS"],
+      "position": "Frontend Developer"
+    },
+    {
       "name": "Rug Pull",
       "description": "SAIG Web Application for registered training session and submit project.",
       "image": "/content/rug-pull.png",
