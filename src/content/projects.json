@@ -1,6 +1,21 @@
 {
   "projects": [
     {
+      "name": "Eventgenda",
+      "description": "Eventgenda is a web application that allows users to create, manage, and share events. It is a platform where users can create events, funding events, and join events.",
+      "image": "/content/eventgenda.png",
+      "links": "https://github.com/khris-xp/eventgenda",
+      "technologies": [
+        "Nextjs",
+        "Nodejs",
+        "MongoDB",
+        "TailwindCSS",
+        "Material UI",
+        "Zustand"
+      ],
+      "position": "Full Stack Developer"
+    },
+    {
       "name": "NoRegEX",
       "description": "Theory of computation web application for learning regular expression.",
       "image": "/content/noregex.png",
