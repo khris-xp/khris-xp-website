@@ -1,6 +1,14 @@
 {
   "projects": [
     {
+      "name": "EduSAIG",
+      "description": "EduSaig revolutionizes online education by combining cutting-edge AI technology with personalized learning experiences.",
+      "image": "/content/edusaig.png",
+      "links": "https://www.edusaig.com",
+      "technologies": ["Nextjs", "Nestjs", "Postgresql", "TailwindCSS"],
+      "position": "Full Stack Developer and Project Manager"
+    },
+    {
       "name": "Eventgenda",
       "description": "Eventgenda is a web application that allows users to create, manage, and share events. It is a platform where users can create events, funding events, and join events.",
       "image": "/content/eventgenda.png",

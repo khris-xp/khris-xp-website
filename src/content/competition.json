@@ -1,6 +1,42 @@
 {
   "competition": [
     {
+      "name": "Student Hacks",
+      "description": "Create software to better society and gain vital experience to boost your future career",
+      "duration": "Jul 2024 - Nov 2024",
+      "location": "Online",
+      "position": "Full Stack Developer and Project Manager",
+      "image": "/competition/what-the-hack.png",
+      "link": "https://studenthacks.devpost.com/?ref_content=default&ref_feature=challenge&ref_medium=portfolio"
+    },
+    {
+      "name": "CyberHacks",
+      "description": "Powered by High Schoolers to give beginners an intro to the world of engineering and computer programming. It is a great beginner to intermediate hackathon.",
+      "duration": "Jul 2024 - Nov 2024",
+      "location": "Online",
+      "position": "Full Stack Developer and Project Manager",
+      "image": "/competition/cyber-hacks.png",
+      "link": "https://cyberhacks.devpost.com/?ref_content=default&ref_feature=challenge&ref_medium=portfolio"
+    },
+    {
+      "name": "TechHacks By TechTalks",
+      "description": "Powered by High Schoolers to give beginners an intro to the world of engineering and computer programming. It is a great beginner to intermediate hackathon.",
+      "duration": "Jul 2024 - Nov 2024",
+      "location": "Online",
+      "position": "Full Stack Developer and Project Manager",
+      "image": "/competition/tech-hacks.png",
+      "link": "https://tthacks.devpost.com/?ref_content=default&ref_feature=challenge&ref_medium=portfolio"
+    },
+    {
+      "name": "EduLearns - The Biggest Summer Hackathon",
+      "description": "Powered by High Schoolers to give beginners an intro to the world of engineering and computer programming. It is a great beginner to intermediate hackathon.",
+      "duration": "Jul 2024 - Nov 2024",
+      "location": "Online",
+      "position": "Full Stack Developer and Project Manager",
+      "image": "/competition/edulearn.png",
+      "link": "https://elsummer.devpost.com/"
+    },
+    {
       "name": "Zero to One Hackathon by Convex",
       "description": "Build fullstack apps at light speed with Convex.",
       "duration": "Jan 2024 - Mar 2024",
