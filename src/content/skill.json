@@ -12,47 +12,57 @@
     },
     {
       "name": "JavaScript",
-      "image": "https://cdn.worldvectorlogo.com/logos/javascript-1.svg",
+      "image": "https://www.svgrepo.com/show/349419/javascript.svg",
       "category": "Frontend Development"
     },
     {
       "name": "TypeScript",
-      "image": "https://cdn.worldvectorlogo.com/logos/typescript.svg",
+      "image": "https://www.svgrepo.com/show/374146/typescript-official.svg",
       "category": "Frontend Development"
     },
     {
       "name": "React",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png",
+      "image": "https://www.svgrepo.com/show/493719/react-javascript-js-framework-facebook.svg",
       "category": "Frontend Development"
     },
     {
       "name": "Svelte",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Svelte_Logo.svg/1200px-Svelte_Logo.svg.png",
+      "image": "https://www.svgrepo.com/show/374109/svelte.svg",
       "category": "Frontend Development"
     },
     {
       "name": "Nextjs",
-      "image": "https://www.svgrepo.com/show/354113/nextjs-icon.svg",
+      "image": "https://www.svgrepo.com/show/378440/nextjs-fill.svg",
+      "category": "Frontend Development"
+    },
+    {
+      "name": "Vuejs",
+      "image": "https://www.svgrepo.com/show/493625/vue-vuejs-javascript-js-framework.svg",
       "category": "Frontend Development"
     },
     {
       "name": "Node.js",
-      "image": "https://cdn-icons-png.flaticon.com/512/919/919825.png",
+      "image": "https://www.svgrepo.com/show/303658/nodejs-1-logo.svg",
       "category": "Backend Development"
     },
     {
       "name": "Nestjs",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/a/a8/NestJS.svg",
+      "image": "https://www.svgrepo.com/show/373872/nestjs.svg",
       "category": "Backend Development"
     },
     {
       "name": "Golang",
-      "image": "https://go.dev/blog/go-brand/Go-Logo/PNG/Go-Logo_Blue.png",
+      "image": "https://www.svgrepo.com/show/355038/golang.svg",
       "category": "Backend Development"
     },
     {
-      "name": "SQL",
-      "image": "https://seeklogo.com/images/A/azure-sql-logo-3AE930D2AF-seeklogo.com.png",
+      "name": "MySQL",
+      "image": "https://www.svgrepo.com/show/303251/mysql-logo.svg",
+      "category": "Database"
+    },
+    {
+      "name": "PostgreSQL",
+      "image": "https://www.svgrepo.com/show/354200/postgresql.svg",
       "category": "Database"
     },
     {
