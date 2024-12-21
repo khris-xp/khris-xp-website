@@ -1,52 +1,173 @@
-<div class='relative bg-white overflow-hidden mt-16'>
-  <div class='max-w-7xl mx-auto'>
-    <div
-      class='relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32'
-    >
-      <svg
-        class='hidden lg:block absolute right-0 inset-y-0 h-full w-32 text-white transform translate-x-1/2'
-        fill='currentColor'
-        viewBox='0 0 100 100'
-        preserveAspectRatio='none'
-        aria-hidden='true'
-      >
-        <polygon points='50,0 100,0 50,100 0,100'></polygon>
-      </svg>
+<div class="relative py-20 overflow-hidden bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="relative lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
+      <div class="relative animate-slide-in">
+        <div class="mb-12">
+          <span
+            class="inline-block py-1 px-3 rounded-full text-sm font-semibold tracking-wide text-indigo-600 bg-indigo-100 mb-4"
+          >
+            Profile
+          </span>
+          <h2
+            class="text-4xl font-bold mb-6 bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent"
+          >
+            About Me
+          </h2>
+        </div>
 
-      <div class='pt-1'></div>
-
-      <main
-        class='mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28'
-      >
-        <div class='sm:text-center lg:text-left'>
-          <div class='pb-6 flex flex-col gap-4 container mx-auto'>
-            <p class='text-sm text-designColor tracking-[4px] uppercase'>
-              Profile
-            </p>
-            <h2 class='text-3xl md:text-4xl font-bold'>About Me</h2>
-          </div>
-          <p>
+        <div class="prose prose-lg text-gray-600 space-y-6">
+          <p class="leading-relaxed animate-fade-in" style="--delay: 0.2s">
             I am a dedicated and passionate computer engineering student
             enrolled at King Mongkut's Institute of Technology Ladkrabang
-            (KMITL), currently in the CE 61 program. Alongside my academic
-            pursuits, I hold the esteemed position of secretary at the SAIG
-            Laboratory, where I actively contribute to and engage in
-            cutting-edge research and projects within the realm of computer
-            engineering. My fervor for technology extends specifically to web
-            development, where I find both challenge and inspiration. I am
-            driven by a relentless curiosity to explore the intricacies of
-            creating seamless and innovative web experiences. Through my
-            academic journey and involvement in the SAIG Laboratory.
+            (KMITL), currently in the CE 61 program.
+          </p>
+
+          <p class="leading-relaxed animate-fade-in" style="--delay: 0.4s">
+            Alongside my academic pursuits, I hold the esteemed position of
+            secretary at the SAIG Laboratory, where I actively contribute to and
+            engage in cutting-edge research and projects within the realm of
+            computer engineering.
+          </p>
+
+          <p class="leading-relaxed animate-fade-in" style="--delay: 0.6s">
+            My fervor for technology extends specifically to web development,
+            where I find both challenge and inspiration. I am driven by a
+            relentless curiosity to explore the intricacies of creating seamless
+            and innovative web experiences.
           </p>
         </div>
-      </main>
+
+        <div
+          class="mt-8 flex flex-wrap gap-2 animate-fade-in"
+          style="--delay: 0.8s"
+        >
+          <span class="skill-tag">Web Development</span>
+          <span class="skill-tag">Computer Engineering</span>
+          <span class="skill-tag">Research</span>
+          <span class="skill-tag">Innovation</span>
+        </div>
+      </div>
+
+      <div
+        class="mt-10 lg:mt-0 relative animate-slide-in"
+        style="--delay: 0.4s"
+      >
+        <div
+          class="relative mx-auto rounded-lg overflow-hidden shadow-xl transform hover:scale-105 transition-transform duration-300"
+        >
+          <div class="aspect-w-5 aspect-h-6">
+            <img
+              class="object-cover object-center w-full h-full"
+              src="/profile.jpeg"
+              alt="Profile"
+              loading="lazy"
+            />
+
+            <div
+              class="absolute -bottom-6 -right-6 w-24 h-24 bg-indigo-100 rounded-full opacity-50"
+            >
+            </div>
+            <div
+              class="absolute -top-6 -left-6 w-24 h-24 bg-purple-100 rounded-full opacity-50"
+            >
+            </div>
+          </div>
+
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"
+          >
+          </div>
+        </div>
+
+        <div class="absolute -right-4 top-1/4 animate-float">
+          <div class="bg-white p-3 rounded-lg shadow-lg">
+            <span class="text-indigo-600 font-semibold">KMITL Student</span>
+          </div>
+        </div>
+
+        <div
+          class="absolute -left-4 bottom-1/4 animate-float"
+          style="animation-delay: 1s"
+        >
+          <div class="bg-white p-3 rounded-lg shadow-lg">
+            <span class="text-purple-600 font-semibold">SAIG Lab</span>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-  <div class='lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2'>
-    <img
-      class='h-56 w-full object-cover object-top sm:h-72 md:h-96 lg:h-full'
-      src='/profile.jpeg'
-      alt='profile'
-    />
-  </div>
 </div>
+
+<style>
+  .skill-tag {
+    @apply px-4 py-2 rounded-full bg-gray-100 text-gray-700 font-medium 
+           hover:bg-indigo-100 hover:text-indigo-600 transition-colors duration-300
+           cursor-default;
+  }
+
+  .animate-fade-in {
+    opacity: 0;
+    animation: fadeIn 0.8s ease-out forwards;
+    animation-delay: var(--delay, 0s);
+  }
+
+  .animate-slide-in {
+    opacity: 0;
+    transform: translateX(-20px);
+    animation: slideIn 0.8s ease-out forwards;
+    animation-delay: var(--delay, 0s);
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  /* Gradient border effect */
+  .prose p {
+    @apply relative pl-4;
+  }
+
+  .prose p::before {
+    content: "";
+    @apply absolute left-0 top-0 bottom-0 w-1 rounded-full bg-gradient-to-b from-indigo-500 to-purple-500;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .animate-slide-in {
+      animation-name: fadeIn;
+    }
+  }
+</style>

@@ -1,18 +1,20 @@
 ---
-import Hero from '@components/Hero.astro';
-import ProjectCard from '@components/ProjectCard.astro';
-import Layout from '@layouts/Layout.astro';
-import projects from '@content/projects.json';
-import TimeLine from '@components/TimeLine.astro';
-import About from '@components/About.astro';
-import { fetchProject } from 'script/fetchProject';
-import { fetchCompetition } from 'script/fetchCompetition';
-import competition from '@content/competition.json';
-import certificate from '@content/certificate.json';
-import CompetitionCard from '@components/CompetitionCard.astro';
-import CertificateCard from '@components/CertificateCard.astro';
-import { fetchCertificate } from 'script/fetchCertificate';
-import Skills from '@components/Skills.astro';
+import About from "@components/About.astro";
+import CertificateCard from "@components/CertificateCard.astro";
+import CompetitionCard from "@components/CompetitionCard.astro";
+import ExploreMoreButton from "@components/ExploreMoreButton.astro";
+import Hero from "@components/Hero.astro";
+import ProjectCard from "@components/ProjectCard.astro";
+import SectionHeading from "@components/SectionHeading.astro";
+import Skills from "@components/Skills.astro";
+import TimeLine from "@components/TimeLine.astro";
+import certificate from "@content/certificate.json";
+import competition from "@content/competition.json";
+import projects from "@content/projects.json";
+import Layout from "@layouts/Layout.astro";
+import { fetchCertificate } from "script/fetchCertificate";
+import { fetchCompetition } from "script/fetchCompetition";
+import { fetchProject } from "script/fetchProject";
 
 const projectsDataStatic = projects.projects;
 const competitionDataStatic = competition.competition;
@@ -22,101 +24,158 @@ const competitionData = await fetchCompetition(competitionDataStatic);
 const certificateData = await fetchCertificate(certificateDataStatic);
 ---
 
-<Layout title='Home'>
-  <div class='font-jamjuri'>
-    <Hero />
-    <About />
-    <div class='py-12 flex flex-col gap-4 container mx-auto'>
-      <p class='text-sm text-designColor tracking-[4px] uppercase'>Feature</p>
-      <h2 class='text-3xl md:text-4xl font-bold'>Development Skills</h2>
-    </div>
-    <div class='flex justify-center mx-auto container mb-16c'>
-      <Skills />
-    </div>
-    <div class='py-12 flex flex-col gap-4 container mx-auto'>
-      <p class='text-sm text-designColor tracking-[4px] uppercase'>Working</p>
-      <h2 class='text-3xl md:text-4xl font-bold'>Working Experience</h2>
-    </div>
-    <div class='flex justify-center mx-auto container mb-16'>
-      <TimeLine />
-    </div>
-    <div class='py-12 flex flex-col gap-4 container mx-auto'>
-      <p class='text-sm text-designColor tracking-[4px] uppercase'>Project</p>
-      <h2 class='text-3xl md:text-4xl font-bold'>Personal Project</h2>
-    </div>
-    <div class='flex justify-center mx-auto container px-10'>
-      <div class='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-16'>
-        {
-          projectData.map((project) => (
-            <ProjectCard
-              key={project.name}
-              name={project.name}
-              link={project.links}
-              image={project.image}
-              technologies={project.technologies}
-              position={project.position}
-            />
-          ))
-        }
+<Layout title="Home">
+  <main class="min-h-screen bg-gradient-to-b from-white to-gray-50">
+    <section class="relative min-h-screen">
+      <div class="absolute inset-0 z-0">
+        <div class="particles-background"></div>
       </div>
-    </div>
-    <div
-      class='flex justify-center text-2xl font-semibold text-blue-500 hover:text-blue-800 duration-200 hover:underline my-20'
-    >
-      <a href='/project'>Explore more project</a>
-    </div>
-    <div class='py-12 flex flex-col gap-4 container mx-auto'>
-      <p class='text-sm text-designColor tracking-[4px] uppercase'>
-        Competition
-      </p>
-      <h2 class='text-3xl md:text-4xl font-bold'>Competition and Event</h2>
-    </div>
-    <div class='flex justify-center mx-auto container px-10'>
-      <div class='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-16'>
-        {
-          competitionData.map((competition) => (
-            <CompetitionCard
-              key={competition.name}
-              name={competition.name}
-              duration={competition.duration}
-              location={competition.location}
-              position={competition.position}
-              link={competition.link}
-              image={competition.image}
-            />
-          ))
-        }
+      <Hero />
+    </section>
+
+    <section class="relative z-10 py-20 md:py-32">
+      <div class="wave-separator"></div>
+      <About />
+    </section>
+
+    <section class="relative z-10 py-10 lg:py-16">
+      <div class="container mx-auto px-4 lg:px-8">
+        <SectionHeading tag="Development Skills" title="Technical Expertise" />
+        <Skills />
       </div>
-    </div>
-    <div
-      class='flex justify-center text-2xl font-semibold text-blue-500 hover:text-blue-800 duration-200 hover:underline my-20'
-    >
-      <a href='/competition'>Explore more competition</a>
-    </div>
-    <div class='py-12 flex flex-col gap-4 container mx-auto'>
-      <p class='text-sm text-designColor tracking-[4px] uppercase'>
-        Certificate
-      </p>
-      <h2 class='text-3xl md:text-4xl font-bold'>Certificate and Bootcamp</h2>
-    </div>
-    <div class='flex justify-center mx-auto container px-10'>
-      <div class='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-16'>
-        {
-          certificateData.map((certificateData) => (
-            <CertificateCard
-              key={certificateData.name}
-              name={certificateData.name}
-              position={certificateData.position}
-              image={certificateData.image}
-            />
-          ))
-        }
+    </section>
+
+    <section class="relative z-10 py-10 lg:py-16 bg-white">
+      <div class="container mx-auto px-4 lg:px-8">
+        <SectionHeading tag="Career Path" title="Professional Journey" />
+        <TimeLine />
       </div>
-    </div>
-    <div
-      class='flex justify-center text-2xl font-semibold text-blue-500 hover:text-blue-800 duration-200 hover:underline my-20'
-    >
-      <a href='/certificate'>Explore more certificate</a>
-    </div>
-  </div>
+    </section>
+
+    <section class="relative z-10 py-10 lg:py-16">
+      <div class="container mx-auto px-4 lg:px-8">
+        <SectionHeading tag="Portfolio" title="Featured Projects" />
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 lg:gap-8"
+        >
+          {
+            projectData.map((project, index) => (
+              <div class="animate-on-scroll" style={`--delay: ${index * 0.2}s`}>
+                <ProjectCard
+                  key={project.name}
+                  name={project.name}
+                  link={project.links}
+                  image={project.image}
+                  technologies={project.technologies}
+                  position={project.position}
+                />
+              </div>
+            ))
+          }
+        </div>
+        <ExploreMoreButton href="/project" text="Explore More Projects" />
+      </div>
+    </section>
+
+    <section class="relative z-10 py-10 lg:py-16 bg-white">
+      <div class="container mx-auto px-4 lg:px-8">
+        <SectionHeading tag="Achievements" title="Competition History" />
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 lg:gap-8"
+        >
+          {
+            competitionData.map((competition, index) => (
+              <div class="animate-on-scroll" style={`--delay: ${index * 0.2}s`}>
+                <CompetitionCard key={competition.name} {...competition} />
+              </div>
+            ))
+          }
+        </div>
+        <ExploreMoreButton href="/competition" text="View All Competitions" />
+      </div>
+    </section>
+
+    <section class="relative z-10 py-10 lg:py-16">
+      <div class="container mx-auto px-4 lg:px-8">
+        <SectionHeading tag="Certifications" title="Professional Development" />
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 lg:gap-8"
+        >
+          {
+            certificateData.map((cert, index) => (
+              <div class="animate-on-scroll" style={`--delay: ${index * 0.2}s`}>
+                <CertificateCard key={cert.name} {...cert} />
+              </div>
+            ))
+          }
+        </div>
+        <ExploreMoreButton href="/certificate" text="See All Certificates" />
+      </div>
+    </section>
+  </main>
 </Layout>
+
+<style>
+  .particles-background {
+    @apply absolute w-full h-full;
+    background-image: radial-gradient(
+        circle at 25px 25px,
+        rgba(99, 102, 241, 0.15) 2px,
+        transparent 0
+      ),
+      radial-gradient(
+        circle at 75px 75px,
+        rgba(139, 92, 246, 0.15) 2px,
+        transparent 0
+      );
+    background-size: 100px 100px;
+    animation: particlesAnimation 20s linear infinite;
+  }
+
+  .wave-separator {
+    @apply absolute top-0 left-0 w-full overflow-hidden leading-none;
+    transform: rotate(180deg);
+  }
+
+  .explore-more-btn {
+    @apply inline-flex items-center px-6 py-3 text-lg font-semibold
+           text-white bg-gradient-to-r from-indigo-600 to-purple-600 
+           rounded-full transform transition-all duration-300 
+           hover:scale-105 hover:shadow-lg;
+  }
+
+  .animate-on-scroll {
+    @apply opacity-0 transform translate-y-8;
+    animation: fadeInUp 0.8s ease-out forwards;
+    animation-delay: var(--delay, 0s);
+  }
+
+  @keyframes particlesAnimation {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: 100px 100px;
+    }
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @media (max-width: 768px) {
+    .container {
+      @apply px-4;
+    }
+
+    .grid {
+      @apply gap-6;
+    }
+  }
+</style>

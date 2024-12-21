@@ -1,37 +1,90 @@
-<div class='navbar bg-base-100 font-jamjuri'>
-  <div class='navbar-start'>
-    <div class='dropdown'>
-      <div tabindex={0} role='button' class='btn btn-ghost lg:hidden'>
-        <svg
-          xmlns='http://www.w3.org/2000/svg'
-          class='h-5 w-5'
-          fill='none'
-          viewBox='0 0 24 24'
-          stroke='currentColor'
-          ><path
-            stroke-linecap='round'
-            stroke-linejoin='round'
-            stroke-width='2'
-            d='M4 6h16M4 12h8m-8 6h16'></path></svg
+<nav class="fixed w-full z-50 animate-fade-in glass-effect">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between h-16">
+      <div class="flex items-center">
+        <a href="/" class="text-xl font-bold text-gradient hover-scale">
+          Khris-xp Website
+        </a>
+      </div>
+
+      <div class="hidden md:flex items-center space-x-8">
+        <a href="/" class="nav-link smooth-transition">Home</a>
+        <a href="/project" class="nav-link smooth-transition">Projects</a>
+        <a href="/competition" class="nav-link smooth-transition">Competition</a
+        >
+        <a href="/certificate" class="nav-link smooth-transition">Certificate</a
         >
       </div>
-      <ul
-        class='menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52'
-      >
-        <li><a href='/'>Home</a></li>
-        <li><a href='/project'>Projects</a></li>
-        <li><a href='/competition'>Competition</a></li>
-        <li><a href='/certificate'>Certificate</a></li>
-      </ul>
+
+      <!-- Mobile Navigation Button -->
+      <div class="md:hidden flex items-center">
+        <button
+          class="mobile-menu-button p-2 rounded-md hover:bg-gray-100 smooth-transition"
+        >
+          <svg
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h8m-8 6h16"></path>
+          </svg>
+        </button>
+      </div>
     </div>
-    <a href='/' class='btn btn-ghost text-xl'>Khris-xp Website</a>
   </div>
-  <div class='navbar-end hidden lg:flex'>
-    <ul class='menu menu-horizontal px-1 text-base'>
-      <li><a href='/'>Home</a></li>
-      <li><a href='/project'>Projects</a></li>
-      <li><a href='/competition'>Competition</a></li>
-      <li><a href='/certificate'>Certificate</a></li>
-    </ul>
+
+  <!-- Mobile Navigation Menu -->
+  <div class="md:hidden mobile-menu hidden">
+    <div class="px-2 pt-2 pb-3 space-y-1 glass-effect">
+      <a href="/" class="mobile-nav-link smooth-transition block">Home</a>
+      <a href="/project" class="mobile-nav-link smooth-transition block"
+        >Projects</a
+      >
+      <a href="/competition" class="mobile-nav-link smooth-transition block"
+        >Competition</a
+      >
+      <a href="/certificate" class="mobile-nav-link smooth-transition block"
+        >Certificate</a
+      >
+    </div>
   </div>
-</div>
+</nav>
+
+<style>
+  .nav-link {
+    @apply px-3 py-2 text-gray-700 hover:text-indigo-600 font-medium;
+  }
+
+  .mobile-nav-link {
+    @apply px-3 py-2 text-gray-700 hover:text-indigo-600 font-medium rounded-md;
+  }
+
+  .mobile-menu {
+    animation: slideDown 0.3s ease-out forwards;
+  }
+
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
+
+<script>
+  const mobileMenuButton = document.querySelector(".mobile-menu-button");
+  const mobileMenu = document.querySelector(".mobile-menu");
+
+  mobileMenuButton?.addEventListener("click", () => {
+    mobileMenu?.classList.toggle("hidden");
+  });
+</script>

@@ -1,0 +1,28 @@
+---
+interface Props {
+  tag: string;
+  title: string;
+}
+
+const { tag, title } = Astro.props;
+---
+
+<div class="section-header text-center mb-16 animate-on-scroll">
+  <span class="pill-tag">{tag}</span>
+  <h2 class="gradient-heading">{title}</h2>
+</div>
+
+<style>
+  .pill-tag {
+    @apply inline-block px-4 py-1 text-sm font-semibold text-indigo-600 
+           bg-indigo-50 rounded-full mb-4 
+           transform transition-all duration-300;
+  }
+
+  .gradient-heading {
+    @apply text-4xl md:text-5xl font-bold mb-4;
+    background: linear-gradient(135deg, #4f46e5, #7c3aed);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+</style>

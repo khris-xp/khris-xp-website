@@ -1,17 +1,67 @@
 ---
-const { name, image, category } = Astro.props;
+const { name, image, category, delay = 0 } = Astro.props;
 ---
 
-<div class='overflow-x-hidden'>
-  <div class='flex items-start rounded-xl bg-white p-4 shadow-lg'>
+<div class="skill-card group" style={`--delay: ${delay}s`}>
+  <div
+    class="relative overflow-hidden rounded-xl bg-white p-6 shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
+  >
     <div
-      class='flex h-12 w-12 items-center justify-center rounded-full border border-purple-100 bg-purple-50'
+      class="absolute top-0 left-0 h-1 w-full bg-gradient-to-r from-indigo-500 to-purple-500 transform origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-100"
     >
-      <img src={image} class='w-6 h-6' />
     </div>
-    <div class='ml-4'>
-      <h2 class='font-semibold'>{name}</h2>
-      <p class='mt-2 text-sm text-gray-500'>{category}</p>
+
+    <div class="flex items-center space-x-4 mb-4">
+      <div class="relative">
+        <div
+          class="w-12 h-12 rounded-lg bg-indigo-50 p-2 flex items-center justify-center group-hover:bg-indigo-100 transition-colors duration-300"
+        >
+          <img
+            src={image}
+            alt={name}
+            class="w-8 h-8 object-contain filter group-hover:hue-rotate-15 transition-all duration-300"
+          />
+        </div>
+        <div
+          class="absolute -inset-0.5 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg blur opacity-0 group-hover:opacity-30 transition-opacity duration-300"
+        >
+        </div>
+      </div>
+      <div>
+        <h4 class="text-lg font-semibold text-gray-800">{name}</h4>
+        <p class="text-sm text-gray-500">{category}</p>
+      </div>
+    </div>
+
+    <div class="mt-4">
+      <div
+        class="skill-meter relative h-1.5 bg-gray-200 rounded-full overflow-hidden"
+      >
+        <div
+          class="absolute top-0 left-0 h-full w-4/5 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full transform scale-x-0 group-hover:scale-x-100 transition-transform duration-700"
+        >
+        </div>
+      </div>
     </div>
   </div>
 </div>
+
+<style>
+  .skill-card {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: cardAppear 0.5s ease-out forwards;
+    animation-delay: var(--delay, 0s);
+  }
+
+  @keyframes cardAppear {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
