@@ -56,6 +56,16 @@
       "category": "Backend Development"
     },
     {
+      "name": ".NET Core",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/.NET_Core_Logo.svg/512px-.NET_Core_Logo.svg.png?20210328084203",
+      "category": "Backend Development"
+    },
+    {
+      "name": "PHP",
+      "image": "https://www.svgrepo.com/show/349474/php.svg",
+      "category": "Backend Development"
+    },
+    {
       "name": "MySQL",
       "image": "https://www.svgrepo.com/show/303251/mysql-logo.svg",
       "category": "Database"
