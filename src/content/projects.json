@@ -1,10 +1,18 @@
 {
   "projects": [
     {
+      "name": "Bubble Tea Cafe",
+      "description": "Web Development CEIP Project.",
+      "image": "/content/bubble-tea-cafe.png",
+      "links": "https://bubble-tea-cafe.vercel.app",
+      "technologies": ["Nextjs", "TailwindCSS", "Go Fiber", "MongoDB"],
+      "position": "Full Stack Developer"
+    },
+    {
       "name": "Play to win",
       "description": "Play to Win is a web application that allows users to play games and earn money. It is a platform where users can play games, earn money, and withdraw money.",
       "image": "/content/play-to-win.png",
-      "links": "https://github.com/khris-xp",
+      "links": "https://github.com/khris-xp/play-to-win-api",
       "technologies": ["Nextjs", "TailwindCSS", "Go Echo", "MongoDB"],
       "position": "Full Stack Developer"
     },
@@ -54,14 +62,6 @@
       "links": "https://kmitltangti.azurewebsites.net",
       "technologies": ["ASP.net Core MVC", "MongoDB"],
       "position": "Full Stack Developer"
-    },
-    {
-      "name": "Bubble Tea Cafe API",
-      "description": "Web Development CEIP Project.",
-      "image": "/content/go-fiber.webp",
-      "links": "https://github.com/khris-xp/bubble-tea-cafe-api",
-      "technologies": ["Go Fiber", "MongoDB"],
-      "position": "Backend Developer"
     },
     {
       "name": "Coffee Shop Starbo",
