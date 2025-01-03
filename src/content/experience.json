@@ -1,6 +1,16 @@
 {
   "experience": [
     {
+      "company": "Standupcode",
+      "designation": "Full Stack Developer",
+      "duration": "January 2025 - Present",
+      "startDate": "2025-01-02",
+      "endDate": "Present",
+      "location": "Bangkok, Thailand",
+      "image": "/experience/standupcode.jpg",
+      "description": "Transform your ideas into profit-generating machines. Your bridge blink your business to digital world to be a leader in your industry"
+    },
+    {
       "company": "Kryptodian Co., Ltd.",
       "designation": "Junior Full Stack Developer",
       "duration": "January 2024 - Present",
