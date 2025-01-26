@@ -1,24 +1,24 @@
 {
   "experience": [
     {
-      "company": "Standupcode",
-      "designation": "Full Stack Developer",
-      "duration": "January 2025 - Present",
-      "startDate": "2025-01-02",
-      "endDate": "Present",
-      "location": "Bangkok, Thailand",
-      "image": "/experience/standupcode.jpg",
-      "description": "Transform your ideas into profit-generating machines. Your bridge blink your business to digital world to be a leader in your industry"
-    },
-    {
       "company": "Kryptodian Co., Ltd.",
-      "designation": "Junior Full Stack Developer",
+      "designation": "Full Stack Developer",
       "duration": "January 2024 - Present",
       "startDate": "2024-01-05",
       "endDate": "Present",
       "location": "Bangkok, Thailand",
       "image": "/experience/kryptodian.png",
       "description": "Worked with the project Kryptodian to develop a platform comprehensive infrastructure for your digital assets that offer custody, trade, staking, treasury operations and governance in the same solution."
+    },
+    {
+      "company": "lodash",
+      "designation": "Full Stack Developer Part-Time",
+      "duration": "January 2025 - March 2025",
+      "startDate": "2025-01-02",
+      "endDate": "2025-03-09",
+      "location": "Bangkok, Thailand",
+      "image": "/experience/lodash.jpeg",
+      "description": "Lodash is an expert in venture building, digital marketing, promotion media, and software development, focusing on nurturing and strategically advancing companies on both operational and tactical levels."
     },
     {
       "company": "Innovation for social solidarity and inclusive economy in Asia",

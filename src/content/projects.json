@@ -1,6 +1,14 @@
 {
   "projects": [
     {
+      "name": "Liam Nak Na",
+      "description": "Project about calculate triangle area and perimeter.",
+      "image": "/content/liam-nak-na.png",
+      "links": "https://liam-nak-na-j1ju.vercel.app",
+      "technologies": ["Nextjs", "TailwindCSS", "Go Echo"],
+      "position": "Full Stack Developer"
+    },
+    {
       "name": "Bubble Tea Cafe",
       "description": "Web Development CEIP Project.",
       "image": "/content/bubble-tea-cafe.png",
