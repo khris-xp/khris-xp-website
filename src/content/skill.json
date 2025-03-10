@@ -66,6 +66,11 @@
       "category": "Backend Development"
     },
     {
+      "name": "Rust",
+      "image": "https://www.svgrepo.com/show/374056/rust.svg",
+      "category": "Backend Development"
+    },
+    {
       "name": "MySQL",
       "image": "https://www.svgrepo.com/show/303251/mysql-logo.svg",
       "category": "Database"
