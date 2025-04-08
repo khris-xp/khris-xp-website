@@ -1,6 +1,14 @@
 {
   "projects": [
     {
+      "name": "CE NextGen AI Camp",
+      "description": "CE NextGen AI Camp is a web application for CE NextGen AI Camp.",
+      "image": "/content/ce-nextgen-ai-camp.png",
+      "links": "https://ai-camp.cloud.ce.kmitl.ac.th",
+      "technologies": ["Nextjs", "TailwindCSS", "NestJs", "MongoDB"],
+      "position": "Full Stack Developer and Project Manager"
+    },
+    {
       "name": "Liam Nak Na",
       "description": "Project about calculate triangle area and perimeter.",
       "image": "/content/liam-nak-na.png",
