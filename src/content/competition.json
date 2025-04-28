@@ -1,6 +1,33 @@
 {
   "competition": [
     {
+      "name": "Tyee Hackathon 2025",
+      "description": "Tyee Middle School Bellevue Hackathon 2025",
+      "duration": "Jan 2025 - Apr 2025",
+      "location": "Online",
+      "position": "Full Stack Developer and Project Manager",
+      "image": "/competition/tyee-hackathon.png",
+      "link": "https://tyee2025.devpost.com"
+    },
+    {
+      "name": "Hackonomics 2025",
+      "description": "An experience to help educate and grow insight into Computer Science and Economics.",
+      "duration": "Jan 2025 - June 2025",
+      "location": "Online",
+      "position": "Full Stack Developer and Project Manager",
+      "image": "/competition/hackonomics-2025.png",
+      "link": "https://hackonomics25.devpost.com/"
+    },
+    {
+      "name": "Beyond the Code: Human-Centered Tech",
+      "description": "Encouraging projects that prioritize user experience and address real-world needs.",
+      "duration": "Jan 2025 - Apr 2025",
+      "location": "Online",
+      "position": "Full Stack Developer and Project Manager",
+      "image": "/competition/beyond-the-code.png",
+      "link": "https://beyondthecode.devpost.com/"
+    },
+    {
       "name": "Student Hacks",
       "description": "Create software to better society and gain vital experience to boost your future career",
       "duration": "Jul 2024 - Nov 2024",
